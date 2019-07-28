@@ -1,3 +1,3 @@
-# Basic Template for Firestudio
+# Project for my portfolio
 
-See https://github.com/guessty/firestudio for installation details.
+https://christianguest.dev/
