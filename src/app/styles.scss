@@ -1,0 +1,23 @@
+
+@tailwind base;
+
+html {
+  font-size: 14px;
+  // overflow-x: hidden;
+  overflow-y: initial !important;
+  font-family: 'Exo 2', sans-serif;
+  --reach-dialog: 1; // Hack to stop reach warning about needing a stylesheet
+
+  @screen sm {
+    font-size: 16px;
+  }
+}
+
+body.body,
+#firestudioApp {
+  overflow: initial !important;
+}
+ 
+@tailwind components;
+ 
+@tailwind utilities;
