@@ -46,7 +46,7 @@ export default class Skills extends PureComponent {
           </Flex>
         </Flex>
         <Flex className="gap-between-4">
-          <h3 className="text-xl text-gray-700">Basic working knowledge of:</h3>
+          <h3 className="text-xl text-gray-700">Other experience working with:</h3>
           <Flex className="flex-row flex-wrap gap-between-2">
             {basic.map(skill => Skills.renderSkill(skill))}
           </Flex>

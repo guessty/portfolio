@@ -44,7 +44,7 @@ export default class Nav extends PureComponent {
               target="menu"
               render={({ toggleDialog }) => (
                 <Clickable
-                  className="flex h-full text-gray-500 hover:text-gray-900 p-3"
+                  className="flex items-center h-full text-gray-500 hover:text-gray-900 p-3"
                   onClick={toggleDialog}
                 >
                   <FontAwesomeIcon icon={['fas', 'bars']} size="2x" />
