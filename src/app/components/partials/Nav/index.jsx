@@ -1,8 +1,11 @@
 import React, { PureComponent } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Flex, Clickable, Container } from '@firestudio/ui';
+import {
+  Flex, Clickable, Container, Hr,
+} from '@firestudio/ui';
 //
 import Drawer from '@elements/Drawer';
+import Contact from '@partials/Contact';
 
 export default class Nav extends PureComponent {
   static renderLink(to, text) {
@@ -68,10 +71,14 @@ export default class Nav extends PureComponent {
             )}
           />
           <Flex className="flex-grow gap-between-6">
-            <hr />
+            <Hr />
             {Nav.renderLink('#profile', 'Profile')}
             {Nav.renderLink('#skills', 'Skills')}
             {Nav.renderLink('#experience', 'Experience')}
+            <Hr />
+            <Flex className="items-center">
+              <Contact iconSize={3} />
+            </Flex>
           </Flex>
         </Drawer>
       </nav>

@@ -6,12 +6,13 @@ import {
 import Profile from '@partials/Profile';
 import Skills from '@partials/Skills';
 import Experience from '@partials/Experience';
+import Contact from '@partials/Contact';
 
 export default class extends PureComponent {
   render() {
     return (
       <div>
-        <div className="relative hidden lg:block">
+        <div className="relative hidden lg:block bg-black">
           <BackgroundImage url="/static/images/profile-image.jpg" />
           <Container className="relative lg:py-16">
             <Flex className="gap-around-8">
@@ -23,6 +24,11 @@ export default class extends PureComponent {
               </div>
               <div className="w-1/2 text-gray-200 text-sm">
                 <Profile />
+              </div>
+              <div className="w-1/2">
+                <Flex className="items-center text-white">
+                  <Contact iconSize={3} />
+                </Flex>
               </div>
             </Flex>
           </Container>
@@ -38,11 +44,12 @@ export default class extends PureComponent {
           <Container className="relative">
             <Flex className="gap-around-8 items-center" childClassName="w-full">
               <Flex className="gap-between-2 items-center">
-                <Avatar picture="/static/images/profile.jpeg" className="border-white w-40 h-40" />
+                <Avatar picture="/static/images/profile.jpeg" className="border-white w-40 h-40 bg-gray-900" />
                 <div className="text-center">
                   <h1 className="text-3xl">Christian Guest</h1>
                   <p className="text-lg">Front End Developer</p>
                 </div>
+                <Contact />
               </Flex>
               <Hr className="w-full" />
               <Flex className="gap-between-2">

@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Flex, Clickable, Container } from '@firestudio/ui';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 //
+import Contact from '@partials/Contact';
 
 export default class Footer extends PureComponent {
   render() {
@@ -17,37 +17,7 @@ export default class Footer extends PureComponent {
             >
               Christian Guest
             </Clickable>
-            <Flex className="flex-row gap-between-8">
-              <Clickable
-                className="p-0"
-                href="mailto:christian.guest@outlook.com"
-                isExternal
-                as="a"
-                styledAs="button"
-              >
-                <FontAwesomeIcon icon={['fas', 'envelope-square']} size="2x" />
-              </Clickable>
-              <Clickable
-                className="p-0"
-                href="https://github.com/guessty"
-                isExternal
-                target="_blank"
-                as="a"
-                styledAs="button"
-              >
-                <FontAwesomeIcon icon={['fab', 'github-square']} size="2x" />
-              </Clickable>
-              <Clickable
-                className="p-0"
-                href="https://www.linkedin.com/in/christian-guest-b16a2515a"
-                isExternal
-                target="_blank"
-                as="a"
-                styledAs="button"
-              >
-                <FontAwesomeIcon icon={['fab', 'linkedin']} size="2x" />
-              </Clickable>
-            </Flex>
+            <Contact />
           </Flex>
         </Container>
       </footer>
