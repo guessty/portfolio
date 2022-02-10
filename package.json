@@ -75,7 +75,7 @@
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.5.0",
     "ncp": "^2.0.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "nodemon": "^1.18.11",
     "tailwindcss": "^1.0.4",
     "tailwindcss-interaction-variants": "^2.0.0",
